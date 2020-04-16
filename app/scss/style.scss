@@ -352,7 +352,7 @@
     padding: 120px 0;
 }
 
-.weekprod__title {
+.weekprod__title, .newproduct__title {
     padding: 32px 30px;
     background-color: #ffffff;
     display: flex;
@@ -407,7 +407,7 @@
 .weekprod__content {
     width: 50%;
     // max-width: 585px;
-    padding: 50px 75px 0 25px;
+    padding: 50px 60px 0 50px;
     &-title {
         font-size: 24px;
         font-weight: 600;
@@ -479,4 +479,25 @@
         display: inline-block;
         color: $btn;
     }
+}
+
+// END WEEKPROD
+
+// START NEWPRODUCT
+
+.newproduct {
+    padding: 120px 0;
+    background-color: #f6f7fb;
+}
+.newproduct__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-menu {
+        color: #747b86;
+    }
+}
+.fa-ellipsis-v {
+    color: #a3b1c4;
+    margin-left: 30px;
 }
