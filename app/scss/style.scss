@@ -394,18 +394,19 @@
     height: 450px;
     background-color: #ffffff;
 }
+.weekprod__wrap {
+    display: flex;
+}
 .weekprod__img {
-    display: inline-block;
-    width: 555px;
+    width: 50%;
     height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .weekprod__content {
-    display: inline-block;
-    width: 100%;
-    max-width: 585px;
+    width: 50%;
+    // max-width: 585px;
     padding: 50px 75px 0 25px;
     &-title {
         font-size: 24px;
