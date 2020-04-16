@@ -16,8 +16,7 @@ $(function(){
         nextArrow: '.next-button-slick',
       });
 
-
-
+      var mixer = mixitup('.newproduct__inner-box');
 
 
 
@@ -33,7 +32,7 @@ $(function(){
     //     $('#portfolio-carousel').slick("slickPrev");
     //  });
 
-    // var mixer = mixitup('.products__inner-box');
+    // 
 
 
 
