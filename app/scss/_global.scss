@@ -7,7 +7,6 @@ html {
     box-sizing: inherit;
 }
 a {
-    display: inline-block;
     text-decoration: none;
 }
 p {
@@ -18,17 +17,16 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 body {
     font: 16px Quicksand, sans-serif;
-    line-height: 30px;
+    line-height: 1.5;
     color: #555555;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 .container-fluid {
     min-width: 100%;
