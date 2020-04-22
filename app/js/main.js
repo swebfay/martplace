@@ -8,7 +8,7 @@ $(function(){
         readOnly: true
       });
 
-      $('.weekprof-slider').slick({
+      $('.week-prod__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -16,11 +16,10 @@ $(function(){
         nextArrow: '.next-button-slick',
       });
 
-      var mixer = mixitup('.newproduct__inner-box');
+      var mixer = mixitup('.new-product__inner-box');
 
 
-      $('.feedslider__item-wrapper').slick({
-            centerPadding: '60px',
+      $('.feed-slider__item-wrapper').slick({
             slidesToShow: 3,
             slidesToScroll: 3,
             prevArrow: '.prev-button-slick2',

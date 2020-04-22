@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<!---------- START HEADER ---------->
     <header class="header">
         <div class="header-top">
             <div class="container">
@@ -51,7 +52,7 @@
                         </ul>
                     </nav>
                     <div class="header__search">
-                        <form action="POST">
+                        <form>
                             <input type="search" placeholder="Search product here..." required>
                             <button type="submit">
                                 <i class="icon-magnifier"></i>
@@ -62,6 +63,9 @@
             </div>
         </div>
     </header>
+<!---------- END HEADER ---------->
+
+<!---------- START DASHBOARD ---------->
     <section class="dashboard">
         <div class="container">
             <div class="dashboard__title">
@@ -74,12 +78,14 @@
             </div>
         </div>
     </section>
+<!---------- END DASHBOARD ---------->
 
+<!---------- START FEATURES ---------->
     <section class="features">
         <div class="main__search">
-            <form action="POST">
+            <form>
                 <input type="search" placeholder="Search product here..." required>
-                <div class="select">
+                <div class="label">
                     <select name="categories">
                         <option value="All" selected>All Categories</option>
                         <option value="Plugins">Plugins</option>
@@ -100,29 +106,35 @@
         <div class="container">
             <div class="features__inner">
                 <div class="features__item">
-                    <div class="features__img" style="background-image: url(images/1.jpg);"></div>
+                    <!-- <div class="features__img" style="background-image: url(images/1.jpg);"></div> -->
+                    <img src="images/1.jpg" alt="" class="features__img">
                     <div class="features__title">Best UX Research</div>
                     <p class="features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
                 <div class="features__item">
-                    <div class="features__img" style="background-image: url(images/2.jpg);"></div>
+                    <!-- <div class="features__img" style="background-image: url(images/2.jpg);"></div> -->
+                    <img src="images/2.jpg" alt="" class="features__img">
                     <div class="features__title">Fully Responsive</div>
                     <p class="features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
                 <div class="features__item">
-                    <div class="features__img" style="background-image: url(images/3.jpg);"></div>
+                    <!-- <div class="features__img" style="background-image: url(images/3.jpg);"></div> -->
+                    <img src="images/3.jpg" alt="" class="features__img">
                     <div class="features__title">Buy & Sell Easily</div>
                     <p class="features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="weekprod">
+<!---------- END FEATURES ---------->
+
+<!---------- START WEEK-PROD ---------->
+    <section class="week-prod">
         <div class="container">
-            <div class="weekprod__inner">
-                <div class="weekprod__title">
-                    <div class="weekprod__title-text">Weekly Featured Products</div>
-                    <div class="weekprod__title-arrows">
+            <div class="week-prod__inner">
+                <div class="week-prod__title">
+                    <div class="week-prod__title-text">Weekly Featured Products</div>
+                    <div class="week-prod__title-arrows">
                         <button type="button" class='prev-button-slick'>
                             <i class="icon-chevron-left"></i>
                         </button>
@@ -131,14 +143,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="weekprof-slider">
-                    <div class="weekprod__item">
-                        <div class="weekprod__wrap">
-                            <div class="weekprod__img" style="background-image: url(images/bigimg.jpg);"></div>
-                            <!-- <img class="weekprod__img" src="images/bigimg.jpg" alt=""> -->
-                            <div class="weekprod__content">
-                                <div class="weekprod__content-title">One Page Resume Template</div>
-                                <div class="weekprod__content-prof">
+                <div class="week-prod__slider">
+                    <div class="week-prod__item">
+                        <div class="week-prod__wrap">
+                            <!-- <div class="week-prod__img" style="background-image: url(images/bigimg.jpg);"></div> -->
+                            <img class="week-prod__img" src="images/bigimg.jpg" alt="">
+                            <div class="week-prod__content">
+                                <div class="week-prod__content-title">One Page Resume Template</div>
+                                <div class="week-prod__content-prof">
                                     <a class="prof-info" href="#">
                                         <div class="prof-info__img" style="background-image: url(images/face.png);"></div> AazzTech
                                     </a>
@@ -146,22 +158,20 @@
                                         <i class="icon-wordpress"></i>WordPress
                                     </a>
                                 </div>
-                                <p class="weekprod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                                <div class="categor-info">
-                                    <div>website</div>
-                                    <div>plugin</div>
-                                    <div>landing page</div>
-                                </div>
-                                <div class="weekprof-bottom">
+                                <p class="week-prod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                                <ul class="categor-info">
+                                    <li><a href="#" class="cloud-links">website</a></li>
+                                    <li><a href="#" class="cloud-links">plugin</a></li>
+                                    <li><a href="#" class="cloud-links">landing page</a></li>
+                                </ul>
+                                <div class="week-prod__bottom">
                                     <div class="bottom-wrap">
                                         <div class="price">$10 - $50</div>
                                         <div class="heart">
-                                            <i class="icon-heart"></i>
-                                            <p>46</p>
+                                            <i class="icon-heart"></i> 46
                                         </div>
                                         <div class="cart">
-                                            <i class="icon-cart"></i>
-                                            <p>634</p>
+                                            <i class="icon-cart"></i> 634
                                         </div>
                                     </div>
                                     <div class="rate-star"></div>
@@ -169,12 +179,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="weekprod__item">
-                        <div class="weekprod__wrap">
-                            <div class="weekprod__img" style="background-image: url(images/bigimg2.jpg);"></div>
-                            <div class="weekprod__content">
-                                <div class="weekprod__content-title">One Page Resume Template</div>
-                                <div class="weekprod__content-prof">
+                    <div class="week-prod__item">
+                        <div class="week-prod__wrap">
+                            <!-- <div class="week-prod__img" style="background-image: url(images/bigimg2.jpg);"></div> -->
+                            <img class="week-prod__img" src="images/bigimg2.jpg" alt="">
+                            <div class="week-prod__content">
+                                <div class="week-prod__content-title">One Page Resume Template</div>
+                                <div class="week-prod__content-prof">
                                     <a class="prof-info" href="#">
                                         <div class="prof-info__img" style="background-image: url(images/face.png);"></div> AazzTech
                                     </a>
@@ -182,22 +193,20 @@
                                         <i class="icon-wordpress"></i>WordPress
                                     </a>
                                 </div>
-                                <p class="weekprod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                                <div class="categor-info">
-                                    <div>website</div>
-                                    <div>plugin</div>
-                                    <div>landing page</div>
-                                </div>
-                                <div class="weekprof-bottom">
+                                <p class="week-prod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                                <ul class="categor-info">
+                                    <li><a href="#" class="cloud-links">website</a></li>
+                                    <li><a href="#" class="cloud-links">plugin</a></li>
+                                    <li><a href="#" class="cloud-links">landing page</a></li>
+                                </ul>
+                                <div class="week-prod__bottom">
                                     <div class="bottom-wrap">
                                         <div class="price">$10 - $50</div>
                                         <div class="heart">
-                                            <i class="icon-heart"></i>
-                                            <p>46</p>
+                                            <i class="icon-heart"></i> 46
                                         </div>
                                         <div class="cart">
-                                            <i class="icon-cart"></i>
-                                            <p>634</p>
+                                            <i class="icon-cart"></i> 634
                                         </div>
                                     </div>
                                     <div class="rate-star"></div>
@@ -205,12 +214,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="weekprod__item">
-                        <div class="weekprod__wrap">
-                            <div class="weekprod__img" style="background-image: url(images/bigimg3.jpg);"></div>
-                            <div class="weekprod__content">
-                                <div class="weekprod__content-title">One Page Resume Template</div>
-                                <div class="weekprod__content-prof">
+                    <div class="week-prod__item">
+                        <div class="week-prod__wrap">
+                            <!-- <div class="week-prod__img" style="background-image: url(images/bigimg3.jpg);"></div> -->
+                            <img class="week-prod__img" src="images/bigimg3.jpg" alt="">
+                            <div class="week-prod__content">
+                                <div class="week-prod__content-title">One Page Resume Template</div>
+                                <div class="week-prod__content-prof">
                                     <a class="prof-info" href="#">
                                         <div class="prof-info__img" style="background-image: url(images/face.png);"></div> AazzTech
                                     </a>
@@ -218,22 +228,20 @@
                                         <i class="icon-wordpress"></i>WordPress
                                     </a>
                                 </div>
-                                <p class="weekprod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                                <div class="categor-info">
-                                    <div>website</div>
-                                    <div>plugin</div>
-                                    <div>landing page</div>
-                                </div>
-                                <div class="weekprof-bottom">
+                                <p class="week-prod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                                <ul class="categor-info">
+                                    <li><a href="#" class="cloud-links">website</a></li>
+                                    <li><a href="#" class="cloud-links">plugin</a></li>
+                                    <li><a href="#" class="cloud-links">landing page</a></li>
+                                </ul>
+                                <div class="week-prod__bottom">
                                     <div class="bottom-wrap">
                                         <div class="price">$10 - $50</div>
                                         <div class="heart">
-                                            <i class="icon-heart"></i>
-                                            <p>46</p>
+                                            <i class="icon-heart"></i> 46
                                         </div>
                                         <div class="cart">
-                                            <i class="icon-cart"></i>
-                                            <p>634</p>
+                                            <i class="icon-cart"></i> 634
                                         </div>
                                     </div>
                                     <div class="rate-star"></div>
@@ -241,12 +249,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="weekprod__item">
-                        <div class="weekprod__wrap">
-                            <div class="weekprod__img" style="background-image: url(images/bigimg4.jpg);"></div>
-                            <div class="weekprod__content">
-                                <div class="weekprod__content-title">One Page Resume Template</div>
-                                <div class="weekprod__content-prof">
+                    <div class="week-prod__item">
+                        <div class="week-prod__wrap">
+                            <!-- <div class="week-prod__img" style="background-image: url(images/bigimg4.jpg);"></div> -->
+                            <img class="week-prod__img" src="images/bigimg4.jpg" alt="">
+                            <div class="week-prod__content">
+                                <div class="week-prod__content-title">One Page Resume Template</div>
+                                <div class="week-prod__content-prof">
                                     <a class="prof-info" href="#">
                                         <div class="prof-info__img" style="background-image: url(images/face.png);"></div> AazzTech
                                     </a>
@@ -254,22 +263,20 @@
                                         <i class="icon-wordpress"></i>WordPress
                                     </a>
                                 </div>
-                                <p class="weekprod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                                <div class="categor-info">
-                                    <div>website</div>
-                                    <div>plugin</div>
-                                    <div>landing page</div>
-                                </div>
-                                <div class="weekprof-bottom">
+                                <p class="week-prod__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                                <ul class="categor-info">
+                                    <li><a href="#" class="cloud-links">website</a></li>
+                                    <li><a href="#" class="cloud-links">plugin</a></li>
+                                    <li><a href="#" class="cloud-links">landing page</a></li>
+                                </ul>
+                                <div class="week-prod__bottom">
                                     <div class="bottom-wrap">
                                         <div class="price">$10 - $50</div>
                                         <div class="heart">
-                                            <i class="icon-heart"></i>
-                                            <p>46</p>
+                                            <i class="icon-heart"></i> 46
                                         </div>
                                         <div class="cart">
-                                            <i class="icon-cart"></i>
-                                            <p>634</p>
+                                            <i class="icon-cart"></i> 634
                                         </div>
                                     </div>
                                     <div class="rate-star"></div>
@@ -281,20 +288,29 @@
             </div>
         </div>
     </section>
-    <section class="newproduct">
+<!---------- END WEEK-PROD ---------->
+
+<!---------- START NEW-PRODUCT ---------->
+    <section class="new-product">
         <div class="container">
-            <div class="newproduct__inner">
-                <div class="newproduct__title">
-                    <div class="newproduct__title-text">Newest Release Products</div>
-                    <div class="newproduct__title-menu">
+            <div class="new-product__inner">
+                <div class="new-product__title">
+                    <div class="new-product__title-text">Newest Release Products</div>
+                    <div class="new-product__title-menu">
                         Filter by:
-                        <a href="#" class='select-menu'>
-                            <i class="icon-menu"></i>
-                        </a>
+                        <i class="icon-menu"></i>
+                        <ul class="first-popup">
+                            <i class="icon-up_arrow"></i>
+                            <li><a href="#">Trending items</a></li>
+                            <li><a href="#">Best seller</a></li>
+                            <li><a href="#">Best rating</a></li>
+                            <li><a href="#">Low price</a></li>
+                            <li><a href="#">High price</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="newproduct__menu">
-                    <div class="newproduct__inner-btn">
+                <div class="new-product__menu">
+                    <div class="new-product__inner-btn">
                         <button type="button" data-filter="all">Plugins</button>
                         <button type="button" data-filter=".category-wordpress">WordPress</button>
                         <button type="button" data-filter=".category-template">Site Template</button>
@@ -305,19 +321,20 @@
                         <button type="button" data-filter=".category-software">Software</button>
                     </div>
                 </div>
-                <div class="newproduct__inner-box">
-                    <div class="newproduct__item mix category-wordpress category-new" data-order="1">
-                        <div class="newproduct__imgwrap">
-                            <div class="newproduct__img" style="background-image: url(images/bigimg.jpg);"></div>
-                            <div class="newproduct__links">
+                <div class="new-product__inner-box">
+                    <div class="new-product__item mix category-wordpress category-new" data-order="1">
+                        <div class="new-product__imgwrap">
+                            <!-- <div class="new-product__img" style="background-image: url(images/bigimg.jpg);"></div> -->
+                            <img class="new-product__img" src="images/bigimg.jpg" alt="">
+                            <div class="new-product__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="newproduct__content">
-                            <div class="newproduct__content-inner">
-                                <div class="newproduct__content-title">E-commerce Shopping Cart</div>
-                                <div class="newproduct__content-prof">
+                        <div class="new-product__content">
+                            <div class="new-product__content-inner">
+                                <div class="new-product__content-title">E-commerce Shopping Cart</div>
+                                <div class="new-product__content-prof">
                                     <a class="newprof-info" href="#">
                                         <div class="newprof-info__img" style="background-image: url(images/face.png);"></div> Theme-Valley
                                     </a>
@@ -325,10 +342,10 @@
                                         <i class="icon-wordpress"></i>Plugin
                                     </a>
                                 </div>
-                                <p class="newproduct__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="new-product__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="newproduct__bottom">
-                                <div class="newproduct__bottom-wrap">
+                            <div class="new-product__bottom">
+                                <div class="new-product__bottom-wrap">
                                     <div class="price">$20</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -342,18 +359,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="newproduct__item mix category-psd" data-order="2">
-                        <div class="newproduct__imgwrap">
-                            <div class="newproduct__img" style="background-image: url(images/bigimg2.jpg);"></div>
-                            <div class="newproduct__links">
+                    <div class="new-product__item mix category-psd" data-order="2">
+                        <div class="new-product__imgwrap">
+                            <!-- <div class="new-product__img" style="background-image: url(images/bigimg2.jpg);"></div> -->
+                            <img class="new-product__img" src="images/bigimg2.jpg" alt="">
+                            <div class="new-product__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="newproduct__content">
-                            <div class="newproduct__content-inner">
-                                <div class="newproduct__content-title">Marketify Coffee Shop</div>
-                                <div class="newproduct__content-prof">
+                        <div class="new-product__content">
+                            <div class="new-product__content-inner">
+                                <div class="new-product__content-title">Marketify Coffee Shop</div>
+                                <div class="new-product__content-prof">
                                     <a class="newprof-info" href="#">
                                         <div class="newprof-info__img" style="background-image: url(images/face.png);"></div> EchoTheme
                                     </a>
@@ -361,10 +379,10 @@
                                         <i class="icon-psd"></i>PSD
                                     </a>
                                 </div>
-                                <p class="newproduct__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="new-product__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="newproduct__bottom">
-                                <div class="newproduct__bottom-wrap">
+                            <div class="new-product__bottom">
+                                <div class="new-product__bottom-wrap">
                                     <div class="price">$18</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -378,18 +396,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="newproduct__item mix category-template category-new" data-order="3">
-                        <div class="newproduct__imgwrap">
-                            <div class="newproduct__img" style="background-image: url(images/bigimg3.jpg);"></div>
-                            <div class="newproduct__links">
+                    <div class="new-product__item mix category-template category-new" data-order="3">
+                        <div class="new-product__imgwrap">
+                            <!-- <div class="new-product__img" style="background-image: url(images/bigimg3.jpg);"></div> -->
+                            <img src="images/bigimg3.jpg" alt="" class="new-product__img">
+                            <div class="new-product__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="newproduct__content">
-                            <div class="newproduct__content-inner">
-                                <div class="newproduct__content-title">Bryson - Portfolio Template</div>
-                                <div class="newproduct__content-prof">
+                        <div class="new-product__content">
+                            <div class="new-product__content-inner">
+                                <div class="new-product__content-title">Bryson - Portfolio Template</div>
+                                <div class="new-product__content-prof">
                                     <a class="newprof-info" href="#">
                                         <div class="newprof-info__img" style="background-image: url(images/face.png);"></div>Artcorner
                                     </a>
@@ -397,10 +416,10 @@
                                         <i class="icon-html5"></i>HTML
                                     </a>
                                 </div>
-                                <p class="newproduct__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="new-product__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="newproduct__bottom">
-                                <div class="newproduct__bottom-wrap">
+                            <div class="new-product__bottom">
+                                <div class="new-product__bottom-wrap">
                                     <div class="price">$10</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -415,18 +434,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="newproduct__item mix category-wordpress" data-order="4">
-                        <div class="newproduct__imgwrap">
-                            <div class="newproduct__img" style="background-image: url(images/bigimg4.jpg);"></div>
-                            <div class="newproduct__links">
+                    <div class="new-product__item mix category-wordpress" data-order="4">
+                        <div class="new-product__imgwrap">
+                            <!-- <div class="new-product__img" style="background-image: url(images/bigimg4.jpg);"></div> -->
+                            <img class="new-product__img" src="images/bigimg4.jpg" alt="">
+                            <div class="new-product__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="newproduct__content">
-                            <div class="newproduct__content-inner">
-                                <div class="newproduct__content-title">E-commerce Shopping Cart</div>
-                                <div class="newproduct__content-prof">
+                        <div class="new-product__content">
+                            <div class="new-product__content-inner">
+                                <div class="new-product__content-title">E-commerce Shopping Cart</div>
+                                <div class="new-product__content-prof">
                                     <a class="newprof-info" href="#">
                                         <div class="newprof-info__img" style="background-image: url(images/face.png);"></div> Theme-Valley
                                     </a>
@@ -434,10 +454,10 @@
                                         <i class="icon-wordpress"></i>Plugin
                                     </a>
                                 </div>
-                                <p class="newproduct__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="new-product__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="newproduct__bottom">
-                                <div class="newproduct__bottom-wrap">
+                            <div class="new-product__bottom">
+                                <div class="new-product__bottom-wrap">
                                     <div class="price">$20</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -452,18 +472,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="newproduct__item mix category-psd category-new" data-order="5">
-                        <div class="newproduct__imgwrap">
-                            <div class="newproduct__img" style="background-image: url(images/bigimg5.jpg);"></div>
-                            <div class="newproduct__links">
+                    <div class="new-product__item mix category-psd category-new" data-order="5">
+                        <div class="new-product__imgwrap">
+                            <!-- <div class="new-product__img" style="background-image: url(images/bigimg5.jpg);"></div> -->
+                            <img class="new-product__img" src="images/bigimg5.jpg" alt="">
+                            <div class="new-product__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="newproduct__content">
-                            <div class="newproduct__content-inner">
-                                <div class="newproduct__content-title">Marketify Coffee Shop</div>
-                                <div class="newproduct__content-prof">
+                        <div class="new-product__content">
+                            <div class="new-product__content-inner">
+                                <div class="new-product__content-title">Marketify Coffee Shop</div>
+                                <div class="new-product__content-prof">
                                     <a class="newprof-info" href="#">
                                         <div class="newprof-info__img" style="background-image: url(images/face.png);"></div> EchoTheme
                                     </a>
@@ -471,10 +492,10 @@
                                         <i class="icon-psd"></i>PSD
                                     </a>
                                 </div>
-                                <p class="newproduct__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="new-product__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="newproduct__bottom">
-                                <div class="newproduct__bottom-wrap">
+                            <div class="new-product__bottom">
+                                <div class="new-product__bottom-wrap">
                                     <div class="price">$18</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -488,18 +509,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="newproduct__item mix category-template" data-order="6">
-                        <div class="newproduct__imgwrap">
-                            <div class="newproduct__img" style="background-image: url(images/bigimg6.jpg);"></div>
-                            <div class="newproduct__links">
+                    <div class="new-product__item mix category-template" data-order="6">
+                        <div class="new-product__imgwrap">
+                            <!-- <div class="new-product__img" style="background-image: url(images/bigimg6.jpg);"></div> -->
+                            <img class="new-product__img" src="images/bigimg6.jpg" alt="">
+                            <div class="new-product__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="newproduct__content">
-                            <div class="newproduct__content-inner">
-                                <div class="newproduct__content-title">Bryson - Portfolio Template</div>
-                                <div class="newproduct__content-prof">
+                        <div class="new-product__content">
+                            <div class="new-product__content-inner">
+                                <div class="new-product__content-title">Bryson - Portfolio Template</div>
+                                <div class="new-product__content-prof">
                                     <a class="newprof-info" href="#">
                                         <div class="newprof-info__img" style="background-image: url(images/face.png);"></div>Artcorner
                                     </a>
@@ -507,10 +529,10 @@
                                         <i class="icon-html5"></i>HTML
                                     </a>
                                 </div>
-                                <p class="newproduct__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="new-product__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="newproduct__bottom">
-                                <div class="newproduct__bottom-wrap">
+                            <div class="new-product__bottom">
+                                <div class="new-product__bottom-wrap">
                                     <div class="price">$10</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -526,18 +548,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="newproduct__bottom-btn">
+                <div class="new-product__bottom-btn">
                     <button type="button" data-filter=".category-new">All New Products</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="feedslider">
+<!---------- START NEW-PRODUCT ---------->
+
+<!---------- START FEED-SLIDER ---------->
+    <section class="feed-slider">
         <div class="container">
-            <div class="feedslider__inner">
-                <div class="feedslider__title">
-                    <div class="feedslider__title-text">Your Followers Feed</div>
-                    <div class="feedslider__title-arrows">
+            <div class="feed-slider__inner">
+                <div class="feed-slider__title">
+                    <div class="feed-slider__title-text">Your Followers Feed</div>
+                    <div class="feed-slider__title-arrows">
                         <button type="button" class='prev-button-slick2'>
                             <i class="icon-chevron-left"></i>
                         </button>
@@ -546,19 +571,20 @@
                         </button>
                     </div>
                 </div>
-                <div class="feedslider__item-wrapper">
-                    <div class="feedslider__item">
-                        <div class="feedslider__imgwrap">
-                            <div class="feedslider__img" style="background-image: url(images/bigimg.jpg);"></div>
-                            <div class="feedslider__links">
+                <div class="feed-slider__item-wrapper">
+                    <div class="feed-slider__item">
+                        <div class="feed-slider__imgwrap">
+                            <!-- <div class="feed-slider__img" style="background-image: url(images/bigimg.jpg);"></div> -->
+                            <img src="images/bigimg.jpg" alt="" class="feed-slider__img">
+                            <div class="feed-slider__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="feedslider__content">
-                            <div class="feedslider__content-inner">
-                                <div class="feedslider__content-title">E-commerce Shopping Cart</div>
-                                <div class="feedslider__content-prof">
+                        <div class="feed-slider__content">
+                            <div class="feed-slider__content-inner">
+                                <div class="feed-slider__content-title">E-commerce Shopping Cart</div>
+                                <div class="feed-slider__content-prof">
                                     <a class="feedprof-info" href="#">
                                         <div class="feedprof-info__img" style="background-image: url(images/face.png);"></div> Theme-Valley
                                     </a>
@@ -566,10 +592,10 @@
                                         <i class="icon-wordpress"></i>Plugin
                                     </a>
                                 </div>
-                                <p class="feedslider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="feed-slider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="feedslider__bottom">
-                                <div class="feedslider__bottom-wrap">
+                            <div class="feed-slider__bottom">
+                                <div class="feed-slider__bottom-wrap">
                                     <div class="price">$20</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -583,18 +609,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feedslider__item">
-                        <div class="feedslider__imgwrap">
-                            <div class="feedslider__img" style="background-image: url(images/bigimg2.jpg);"></div>
-                            <div class="feedslider__links">
+                    <div class="feed-slider__item">
+                        <div class="feed-slider__imgwrap">
+                            <!-- <div class="feed-slider__img" style="background-image: url(images/bigimg2.jpg);"></div> -->
+                            <img class="feed-slider__img" src="images/bigimg2.jpg" alt="">
+                            <div class="feed-slider__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="feedslider__content">
-                            <div class="feedslider__content-inner">
-                                <div class="feedslider__content-title">Marketify Coffee Shop</div>
-                                <div class="feedslider__content-prof">
+                        <div class="feed-slider__content">
+                            <div class="feed-slider__content-inner">
+                                <div class="feed-slider__content-title">Marketify Coffee Shop</div>
+                                <div class="feed-slider__content-prof">
                                     <a class="feedprof-info" href="#">
                                         <div class="feedprof-info__img" style="background-image: url(images/face.png);"></div>EchoTheme
                                     </a>
@@ -602,10 +629,10 @@
                                         <i class="icon-psd"></i>PSD
                                     </a>
                                 </div>
-                                <p class="feedslider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="feed-slider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="feedslider__bottom">
-                                <div class="feedslider__bottom-wrap">
+                            <div class="feed-slider__bottom">
+                                <div class="feed-slider__bottom-wrap">
                                     <div class="price">$18</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -619,18 +646,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feedslider__item">
-                        <div class="feedslider__imgwrap">
-                            <div class="feedslider__img" style="background-image: url(images/bigimg3.jpg);"></div>
-                            <div class="feedslider__links">
+                    <div class="feed-slider__item">
+                        <div class="feed-slider__imgwrap">
+                            <!-- <div class="feed-slider__img" style="background-image: url(images/bigimg3.jpg);"></div> -->
+                            <img class="feed-slider__img" src="images/bigimg3.jpg" alt="">
+                            <div class="feed-slider__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="feedslider__content">
-                            <div class="feedslider__content-inner">
-                                <div class="feedslider__content-title">Bryson - Portfolio Template</div>
-                                <div class="feedslider__content-prof">
+                        <div class="feed-slider__content">
+                            <div class="feed-slider__content-inner">
+                                <div class="feed-slider__content-title">Bryson - Portfolio Template</div>
+                                <div class="feed-slider__content-prof">
                                     <a class="feedprof-info" href="#">
                                         <div class="feedprof-info__img" style="background-image: url(images/face.png);"></div>Artcorner
                                     </a>
@@ -638,10 +666,10 @@
                                         <i class="icon-html5"></i>HTML
                                     </a>
                                 </div>
-                                <p class="feedslider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="feed-slider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="feedslider__bottom">
-                                <div class="feedslider__bottom-wrap">
+                            <div class="feed-slider__bottom">
+                                <div class="feed-slider__bottom-wrap">
                                     <div class="price">$10</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -656,18 +684,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feedslider__item">
-                        <div class="feedslider__imgwrap">
-                            <div class="feedslider__img" style="background-image: url(images/bigimg4.jpg);"></div>
-                            <div class="feedslider__links">
+                    <div class="feed-slider__item">
+                        <div class="feed-slider__imgwrap">
+                            <!-- <div class="feed-slider__img" style="background-image: url(images/bigimg4.jpg);"></div> -->
+                            <img class="feed-slider__img" src="images/bigimg4.jpg" alt="">
+                            <div class="feed-slider__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="feedslider__content">
-                            <div class="feedslider__content-inner">
-                                <div class="feedslider__content-title">E-commerce Shopping Cart</div>
-                                <div class="feedslider__content-prof">
+                        <div class="feed-slider__content">
+                            <div class="feed-slider__content-inner">
+                                <div class="feed-slider__content-title">E-commerce Shopping Cart</div>
+                                <div class="feed-slider__content-prof">
                                     <a class="feedprof-info" href="#">
                                         <div class="feedprof-info__img" style="background-image: url(images/face.png);"></div> Theme-Valley
                                     </a>
@@ -675,10 +704,10 @@
                                         <i class="icon-wordpress"></i>Plugin
                                     </a>
                                 </div>
-                                <p class="feedslider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="feed-slider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="feedslider__bottom">
-                                <div class="feedslider__bottom-wrap">
+                            <div class="feed-slider__bottom">
+                                <div class="feed-slider__bottom-wrap">
                                     <div class="price">$20</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -693,18 +722,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feedslider__item">
-                        <div class="feedslider__imgwrap">
-                            <div class="feedslider__img" style="background-image: url(images/bigimg5.jpg);"></div>
-                            <div class="feedslider__links">
+                    <div class="feed-slider__item">
+                        <div class="feed-slider__imgwrap">
+                            <!-- <div class="feed-slider__img" style="background-image: url(images/bigimg5.jpg);"></div> -->
+                            <img class="feed-slider__img" src="images/bigimg5.jpg" alt="">
+                            <div class="feed-slider__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="feedslider__content">
-                            <div class="feedslider__content-inner">
-                                <div class="feedslider__content-title">Marketify Coffee Shop</div>
-                                <div class="feedslider__content-prof">
+                        <div class="feed-slider__content">
+                            <div class="feed-slider__content-inner">
+                                <div class="feed-slider__content-title">Marketify Coffee Shop</div>
+                                <div class="feed-slider__content-prof">
                                     <a class="feedprof-info" href="#">
                                         <div class="feedprof-info__img" style="background-image: url(images/face.png);"></div>EchoTheme
                                     </a>
@@ -712,10 +742,10 @@
                                         <i class="icon-psd"></i>PSD
                                     </a>
                                 </div>
-                                <p class="feedslider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="feed-slider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="feedslider__bottom">
-                                <div class="feedslider__bottom-wrap">
+                            <div class="feed-slider__bottom">
+                                <div class="feed-slider__bottom-wrap">
                                     <div class="price">$18</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -729,18 +759,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feedslider__item">
-                        <div class="feedslider__imgwrap">
-                            <div class="feedslider__img" style="background-image: url(images/bigimg6.jpg);"></div>
-                            <div class="feedslider__links">
+                    <div class="feed-slider__item">
+                        <div class="feed-slider__imgwrap">
+                            <!-- <div class="feed-slider__img" style="background-image: url(images/bigimg6.jpg);"></div> -->
+                            <img class="feed-slider__img" src="images/bigimg6.jpg" alt="">
+                            <div class="feed-slider__links">
                                 <a href="#">More Info</a>
                                 <a href="#">Live Demo</a>
                             </div>
                         </div>
-                        <div class="feedslider__content">
-                            <div class="feedslider__content-inner">
-                                <div class="feedslider__content-title">Bryson - Portfolio Template</div>
-                                <div class="feedslider__content-prof">
+                        <div class="feed-slider__content">
+                            <div class="feed-slider__content-inner">
+                                <div class="feed-slider__content-title">Bryson - Portfolio Template</div>
+                                <div class="feed-slider__content-prof">
                                     <a class="feedprof-info" href="#">
                                         <div class="feedprof-info__img" style="background-image: url(images/face.png);"></div>Artcorner
                                     </a>
@@ -748,10 +779,10 @@
                                         <i class="icon-html5"></i>HTML
                                     </a>
                                 </div>
-                                <p class="feedslider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                                <p class="feed-slider__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
-                            <div class="feedslider__bottom">
-                                <div class="feedslider__bottom-wrap">
+                            <div class="feed-slider__bottom">
+                                <div class="feed-slider__bottom-wrap">
                                     <div class="price">$10</div>
                                     <div class="heart">
                                         <i class="icon-heart"></i>
@@ -770,79 +801,88 @@
             </div>
         </div>
     </section>
-    <section class="fullstatistics">
+<!---------- END FEED-SLIDER ---------->
+
+<!---------- START FULL-STATISTICS ---------->
+    <section class="full-statistics">
         <div class="container">
-            <div class="fullstatistics__list">
-                <div class="fullstatistics__item">
+            <div class="full-statistics__list">
+                <div class="full-statistics__item">
                     <i class="icon-briefcase c-one"></i>
-                    <div class="fullstatistics__item-title c-one">38,436</div>
-                    <p class="fullstatistics__item-text">items for sale</p>
+                    <div class="full-statistics__item-title c-one">38,436</div>
+                    <p class="full-statistics__item-text">items for sale</p>
                 </div>
-                <div class="fullstatistics__item">
+                <div class="full-statistics__item">
                     <i class="icon-cloud-download c-two"></i>
-                    <div class="fullstatistics__item-title c-two">3,736</div>
-                    <p class="fullstatistics__item-text">total sales</p>
+                    <div class="full-statistics__item-title c-two">3,736</div>
+                    <p class="full-statistics__item-text">total sales</p>
                 </div>
-                <div class="fullstatistics__item">
+                <div class="full-statistics__item">
                     <i class="icon-smile c-three"></i>
-                    <div class="fullstatistics__item-title c-three">2,736</div>
-                    <p class="fullstatistics__item-text">happy customers</p>
+                    <div class="full-statistics__item-title c-three">2,736</div>
+                    <p class="full-statistics__item-text">happy customers</p>
                 </div>
-                <div class="fullstatistics__item">
+                <div class="full-statistics__item">
                     <i class="icon-users2 c-four"></i>
-                    <div class="fullstatistics__item-title c-four">25,736</div>
-                    <p class="fullstatistics__item-text">members</p>
+                    <div class="full-statistics__item-title c-four">25,736</div>
+                    <p class="full-statistics__item-text">members</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="whyus">
+<!---------- END FULL-STATISTICS ---------->
+
+<!---------- START WHY-US ---------->
+    <section class="why-us">
         <div class="container">
-            <div class="whyus__title">Why Choose <span>MartPlace</span></div>
-            <p class="whyus__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
-            <div class="whyus__list">
-                <div class="whyus__item">
+            <div class="why-us__title">Why Choose <span>MartPlace</span></div>
+            <p class="why-us__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
+            <div class="why-us__list">
+                <div class="why-us__item">
                     <span>01</span>
                     <i class="icon-license2"></i>
-                    <div class="whyus__item-title">One Time Payment</div>
-                    <p class="whyus__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                    <div class="why-us__item-title">One Time Payment</div>
+                    <p class="why-us__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
-                <div class="whyus__item">
+                <div class="why-us__item">
                     <span>02</span>
                     <i class="icon-magic-wand"></i>
-                    <div class="whyus__item-title">Quality Products</div>
-                    <p class="whyus__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                    <div class="why-us__item-title">Quality Products</div>
+                    <p class="why-us__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
-                <div class="whyus__item">
+                <div class="why-us__item">
                     <span>03</span>
                     <i class="icon-lock"></i>
-                    <div class="whyus__item-title">100% Secure Payment</div>
-                    <p class="whyus__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                    <div class="why-us__item-title">100% Secure Payment</div>
+                    <p class="why-us__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
-                <div class="whyus__item">
+                <div class="why-us__item">
                     <span>04</span>
                     <i class="icon-chart-bars"></i>
-                    <div class="whyus__item-title">Well Organized Code</div>
-                    <p class="whyus__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                    <div class="why-us__item-title">Well Organized Code</div>
+                    <p class="why-us__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
-                <div class="whyus__item">
+                <div class="why-us__item">
                     <span>05</span>
                     <i class="icon-leaf"></i>
-                    <div class="whyus__item-title">Life Time Free Update</div>
-                    <p class="whyus__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                    <div class="why-us__item-title">Life Time Free Update</div>
+                    <p class="why-us__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
-                <div class="whyus__item">
+                <div class="why-us__item">
                     <span>06</span>
                     <i class="icon-telephone2"></i>
-                    <div class="whyus__item-title">Fast and Friendly Support</div>
-                    <p class="whyus__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                    <div class="why-us__item-title">Fast and Friendly Support</div>
+                    <p class="why-us__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="startshop">
+<!---------- END WHY-US ---------->
+
+<!---------- START START-SHOP ---------->
+    <section class="start-shop">
         <div class="container-fluid">
-            <div class="startshop-wrapper">
+            <div class="start-shop__wrapper">
                 <div class="shopauthor">
                     <img src="images/display.png" alt="" class="shopauthor__img">
                     <div class="shopauthor__title">Sell Your Products</div>
@@ -858,6 +898,9 @@
             </div>
         </div>
     </section>
+<!---------- END START-SHOP ---------->
+
+<!---------- START FEEDBACK ---------->
     <section class="feedback">
         <div class="container">
             <div class="feedback-wrapper">
@@ -895,14 +938,17 @@
             </div>
         </div>
     </section>
+<!---------- END FEEDBACK ---------->
+
+<!---------- START NEWS ---------->
     <section class="news">
         <div class="container">
             <div class="news__title">Latest <span>News</span></div>
             <p class="news__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
             <div class="news-item__wrapper">
                 <div class="news-item">
-                    <div class="news-item__img" style="background-image: url(images/bigimg.jpg);"></div>
-                    <!-- <img src="images/bigimg.jpg" alt="" class="news-item__img"> -->
+                    <!-- <div class="news-item__img" style="background-image: url(images/bigimg.jpg);"></div> -->
+                    <img src="images/bigimg.jpg" alt="" class="news-item__img">
                     <div class="news-item__topinner">
                         <div class="news-item__title">Web Design Trends in 2017</div>
                         <div class="news-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
@@ -925,8 +971,8 @@
                     </div>
                 </div>
                 <div class="news-item">
-                    <div class="news-item__img" style="background-image: url(images/bigimg2.jpg);"></div>
-                    <!-- <img src="images/bigimg.jpg" alt="" class="news-item__img"> -->
+                    <!-- <div class="news-item__img" style="background-image: url(images/bigimg2.jpg);"></div> -->
+                    <img src="images/bigimg2.jpg" alt="" class="news-item__img">
                     <div class="news-item__topinner">
                         <div class="news-item__title">The best advices to start your own project</div>
                         <div class="news-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque</div>
@@ -949,8 +995,8 @@
                     </div>
                 </div>
                 <div class="news-item">
-                    <div class="news-item__img" style="background-image: url(images/bigimg3.jpg);"></div>
-                    <!-- <img src="images/bigimg.jpg" alt="" class="news-item__img"> -->
+                    <!-- <div class="news-item__img" style="background-image: url(images/bigimg3.jpg);"></div> -->
+                    <img src="images/bigimg3.jpg" alt="" class="news-item__img">
                     <div class="news-item__topinner">
                         <div class="news-item__title">Best Related Post Plugin</div>
                         <div class="news-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
@@ -975,6 +1021,9 @@
             </div>
         </div>
     </section>
+<!---------- END NEWS ---------->
+
+<!---------- START SUPPORT ---------->
     <section class="support">
         <div class="container">
             <div class="support-inner">
@@ -989,13 +1038,19 @@
             </div>
         </div>
     </section>
-    <section class="joinus">
+<!---------- START SUPPORT ---------->
+
+<!---------- START JOIN-US ---------->
+    <section class="join-us">
         <div class="container">
-            <div class="joinus__title">Ready to Join Our Marketplace!</div>
-            <p class="joinus__text">Over 25,000 designers and developers trust the MartPlace.</p>
-            <button type="button" class="joinus__btn">Join Us Today</button>
+            <div class="join-us__title">Ready to Join Our Marketplace!</div>
+            <p class="join-us__text">Over 25,000 designers and developers trust the MartPlace.</p>
+            <button type="button" class="join-us__btn">Join Us Today</button>
         </div>
     </section>
+<!---------- END JOIN-US ---------->
+
+<!---------- START FOOTER ---------->
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
@@ -1044,7 +1099,7 @@
                     <div class="footer__item-title">Newsletter</div>
                     <p>Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</p>
                     <div class="footer__item-search">
-                        <form action="POST">
+                        <form>
                             <input type="search" placeholder="Enter email" required>
                             <button type="submit">Submit</button>
                         </form>
@@ -1065,6 +1120,7 @@
             </div>
         </div>
     </footer>
+<!---------- END FOOTER ---------->
 
 
 

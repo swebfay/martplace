@@ -1,2 +1,14 @@
 $bg: #eef1f3;
 $btn: #0674ec;
+$gray-line: #ececec;
+
+@mixin cloud-links {
+    background-color: #f1f3f6;
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: #868c96;
+    transition: all .5s;
+    &:hover {
+        color: orange;
+    }
+  }
